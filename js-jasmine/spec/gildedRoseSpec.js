@@ -8,9 +8,6 @@ describe("Gilded Rose", function () {
     }
   }
 
-  // beforeEach(function () {
-  // });
-
   describe("#updateQuality", function () {
 
     it("should reduce the quality of the item by 1 when updateQuality is called as long as the name isn't 'aged brie', 'Backstage passes to a TAFKAL80ETC concert' or 'Sulfuras, Hand of Ragnaros' and the quality of the item doesn't become negative",
@@ -44,6 +41,15 @@ describe("Gilded Rose", function () {
         shop.updateQuality()
         expect(sweets.quality).toEqual(50);
       });
+
+    it("shouldn't decrease the quality of the item if the item's name is 'Sulfuras, Hand of Ragnaros'",
+      function () {
+        let sulfuras = new ItemObj('Sulfuras, Hand of Ragnaros', 5, 10)
+        const shop = new Shop([sulfuras]);
+        shop.updateQuality()
+        expect(sulfuras.quality).toEqual(10);
+      });
+
 
   })
 
@@ -84,7 +90,6 @@ describe("Gilded Rose", function () {
       });
 
   })
-
 
 });
 
