@@ -7,6 +7,4 @@ describe("Item", function () {
     expect(item.quality).toEqual(10);
   });
 
-
-
 });
