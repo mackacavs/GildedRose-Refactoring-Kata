@@ -11,8 +11,15 @@ In this tech test, we were given the challenge of refactoring code for 'Gilded R
 ```
 As an innkeeper
 So that I can keep track of the value of my items
-I want to adjust the quality of my items on a daily basis
+I want to adjust the quality of my items on a daily basis.
 ```
+
+```
+As an innkeeper
+So that I can keep track of when my items must be sold by
+I want to adjust the sellIn date of my items on a daily basis.
+```
+
 
 # Full GildedRose Spcification:
 
