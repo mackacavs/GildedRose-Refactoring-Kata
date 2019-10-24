@@ -107,6 +107,13 @@ describe("Gilded Rose", function () {
         expect(conjured.quality).toEqual(6);
       });
 
+    it("sellIn date should decrease by 1",
+      function () {
+        let chocolate = new ItemObj('Chocolate', 8, 10)
+        const shop = new Shop([chocolate]);
+        shop.updateQuality()
+        expect(chocolate.sellIn).toEqual(7);
+      });
   })
 
   describe("#checkItemBetween0and50", function () {

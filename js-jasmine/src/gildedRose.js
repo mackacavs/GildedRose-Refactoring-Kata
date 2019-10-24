@@ -5,7 +5,6 @@ class Shop {
 
   updateQuality() {
     this.items.forEach(item => {
-
       if (item.name === 'Sulfuras, Hand of Ragnaros') return
 
       if (this.checkItemBetween0and50(item.quality)) {
@@ -23,6 +22,8 @@ class Shop {
             this.editStandardItemQuality(item)
         }
       }
+
+      item.sellIn -= 1
     }
     )
   }
@@ -32,19 +33,11 @@ class Shop {
   }
 
   editStandardItemQuality(item) {
-    if (item.sellIn > 0) {
-      item.quality -= 1
-    } else {
-      item.quality -= 2
-    }
+    (item.sellIn > 0) ? item.quality -= 1 : item.quality -= 2
   }
 
   editAgedBrieQuality(item) {
-    if (item.sellIn > 0) {
-      item.quality += 1
-    } else {
-      item.quality += 2
-    }
+    (item.sellIn > 0) ? item.quality += 1 : item.quality += 2
   }
 
   editBackStagePassQuality(item) {
@@ -60,11 +53,7 @@ class Shop {
   }
 
   editConjuredQuality(item) {
-    if (item.sellIn > 0) {
-      item.quality -= 2
-    } else {
-      item.quality -= 4
-    }
+    (item.sellIn > 0) ? item.quality -= 2 : item.quality -= 4
   }
 }
 
