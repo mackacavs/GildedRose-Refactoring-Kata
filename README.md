@@ -1,6 +1,6 @@
 ## Gilded Rose Kata
 
-In this tech test, we were given the challenge of refactoring code for 'Gilded Rose' - a small shop. The goods degraded in quality as time passed and a system was already in place that dealt with this degradation by lowering the quality of the items in the shop. Unfortunately, the pre-written code was poorly written, difficult to understand and hard to refactor. Not only this, certain products had certain qualities that meant they didn't follow the standard rules of lowering the wuality of the item by 1 every time the sustem was run (at the end of every day).
+In this tech test, we were given the challenge of refactoring code for 'Gilded Rose' - a small shop. The goods degraded in quality as time passed and a system was already in place that dealt with this degradation by lowering the quality of the items in the shop. Unfortunately, the pre-written code was poorly written, difficult to understand and hard to refactor. Not only this, certain products had certain qualities. This meant that they didn't follow the standard rules of lowering the quality of the item by 1 every time the system was run.
 
 ## Test instructions
 
