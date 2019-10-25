@@ -2,6 +2,8 @@
 
 In this tech test, we were given the challenge of refactoring code for 'Gilded Rose' - a small shop. The goods degraded in quality as time passed and a system was already in place that dealt with this degradation by lowering the quality of the items in the shop. Unfortunately, the pre-written code was poorly written, difficult to understand and hard to refactor. Not only this, certain products had certain qualities. This meant that they didn't follow the standard rules of lowering the quality of the item by 1 every time the system was run.
 
+My challenge was to refactor the code so it was more readable and changeable moving forward. I also had to add extra functionality to deal with certain product names.
+
 ## Test instructions
 
 - Clone the code to a suitable directory in your local fiel system 
