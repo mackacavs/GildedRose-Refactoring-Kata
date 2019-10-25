@@ -6,7 +6,7 @@ My challenge was to refactor the code so it was more readable and changeable mov
 
 ## Test instructions
 
-- Clone the code to a suitable directory in your local fiel system 
+- Clone the code to a suitable directory in your local file system 
 - Run SpecRunner.html in your browser
 
 # User Stories
